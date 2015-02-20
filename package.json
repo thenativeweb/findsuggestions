@@ -1,0 +1,26 @@
+{
+  "name": "findsuggestions",
+  "version": "0.0.0",
+  "description": "findsuggestions searches haystacks for needles and nails.",
+  "contributors": [
+    {
+      "name": "Golo Roden",
+      "email": "golo.roden@thenativeweb.io"
+    }
+  ],
+  "main": "lib/findSuggestions.js",
+  "dependencies": {
+    "leven": "1.0.1",
+    "lodash": "3.2.0"
+  },
+  "devDependencies": {
+    "assertthat": "0.5.1",
+    "grunt": "0.4.5",
+    "tourism": "0.13.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thenativeweb/findsuggestions.git"
+  },
+  "license": "MIT"
+}
