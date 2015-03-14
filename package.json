@@ -26,5 +26,8 @@
     "type": "git",
     "url": "git://github.com/thenativeweb/findsuggestions.git"
   },
+  "keywords": [
+    "levenshtein"
+  ],
   "license": "MIT"
 }
