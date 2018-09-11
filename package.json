@@ -19,8 +19,7 @@
   },
   "devDependencies": {
     "assertthat": "0.5.1",
-    "grunt": "0.4.5",
-    "tourism": "0.13.2"
+    "roboter": "1.0.6"
   },
   "repository": {
     "type": "git",
