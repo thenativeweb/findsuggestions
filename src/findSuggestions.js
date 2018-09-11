@@ -1,7 +1,6 @@
 'use strict';
 
-const _ = require('lodash'),
-      leven = require('leven');
+const leven = require('leven');
 
 const findSuggestions = function (options) {
   if (!options) {
@@ -14,14 +13,19 @@ const findSuggestions = function (options) {
     throw new Error('Options.in is missing.');
   }
 
-  return _(options.in).map(item => ({
-    suggestion: item,
-    similarity: 1 / (leven(item, options.for) + 1)
-  })).
-    sortBy('similarity').
-    reverse().
-    uniq(true, 'suggestion').
-    value();
+  const suggestions = options.in.reduce((currentResults, newItem) => {
+    if (!currentResults.find(item => item.suggestion === newItem)) {
+      currentResults.push({
+        suggestion: newItem,
+        similarity: 1 / (leven(newItem, options.for) + 1)
+      });
+    }
+
+    return currentResults;
+  }, []).
+    sort((item1, item2) => item2.similarity - item1.similarity);
+
+  return suggestions;
 };
 
 module.exports = findSuggestions;

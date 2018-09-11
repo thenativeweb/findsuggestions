@@ -14,11 +14,10 @@
   ],
   "main": "lib/findSuggestions.js",
   "dependencies": {
-    "leven": "1.0.1",
-    "lodash": "3.3.0"
+    "leven": "2.1.0"
   },
   "devDependencies": {
-    "assertthat": "0.5.1",
+    "assertthat": "1.0.0",
     "roboter": "1.0.6"
   },
   "repository": {
