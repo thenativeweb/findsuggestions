@@ -12,7 +12,7 @@
       "email": "matthias.wagler@thenativeweb.io"
     }
   ],
-  "main": "lib/findSuggestions.js",
+  "main": "dist/findSuggestions.js",
   "dependencies": {
     "leven": "2.1.0"
   },
