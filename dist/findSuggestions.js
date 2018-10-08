@@ -6,9 +6,11 @@ var findSuggestions = function findSuggestions(options) {
   if (!options) {
     throw new Error('Options are missing.');
   }
+
   if (!options.for) {
     throw new Error('Options.for is missing.');
   }
+
   if (!options.in) {
     throw new Error('Options.in is missing.');
   }
@@ -27,7 +29,6 @@ var findSuggestions = function findSuggestions(options) {
   }, []).sort(function (item1, item2) {
     return item2.similarity - item1.similarity;
   });
-
   return suggestions;
 };
 
