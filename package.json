@@ -17,8 +17,8 @@
     "leven": "2.1.0"
   },
   "devDependencies": {
-    "assertthat": "1.0.0",
-    "roboter": "2.0.0"
+    "assertthat": "2.0.1",
+    "roboter": "3.0.4"
   },
   "repository": {
     "type": "git",
